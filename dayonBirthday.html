@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type = "date" id = "dob">
+    <button onclick = "findDay()">Find Day</button>
+    <p id = "result"></p>
+    <script>
+        function findDay(){
+            let dob = new Date(document.getElementById("dob").value)
+            let days = ["Sun", "Mon", "Tues", "Wed", "Thu", "Fri", "Sat"]
+            document.getElementById("result").innerText = "You born on "+ days[dob.getDay()]
+        }
+    </script>
+</body>
+</html>
+
+
+<!-- print todays date in 04/Feb/2026 todays day is wednesday and time 2:31:344   -->
+
+<!-- write a javascript program to find what is the day on your birth day  -->
+
+<!-- write a javascript program to find 1st january is sunday between 2025 to 2026 -->
+ <!-- write a javascript program to check whether it is weekend or not  -->
