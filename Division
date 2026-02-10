@@ -1,0 +1,31 @@
+<!-- write a javascript program to create a division and display the different coordinates if we move the mouse over the division  -->
+
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <script>
+        function myFunction(e){
+            var x =e.clientX;
+            var y = e.clientY;
+            var coor = "Coordinates: (" + x +","+ y +")";
+            document.getElementById("demo").innerHTML = coor;
+        }
+
+        function clearCoor(){
+            document.getElementById("demo").innerHTML = "";
+        }
+        </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body style = "margin: 40px;">
+    <img>
+    <div id = "coordiv" style = "width: 200px;height: 100px;border: 2px solid" onmousemove = myFunction(event) onmouseout = clearCoor()></div>
+        <br>
+        <p>Mouse over the rectangle</p>
+        <p id = "demo"></p>
+        <p id = "demo1"></p>
+ </body>
+ </html>
